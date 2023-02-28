@@ -59,4 +59,12 @@ html {
     width: 40%;
 }
 
-li {}
+li {
+    list-style: none;
+}
+
+#people {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
