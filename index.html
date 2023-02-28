@@ -7,11 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephanie</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
 
+
 <body>
-    <nav></nav>
-    <div class="center"></div>
+
+    <div class="header" id="headerJS">
+        <a href="#past_projects">Past Projects</a>
+        <a href="#tech">Experiences</a>
+        <a href="#final_project">Final Project</a>
+        <a href="#team">Team</a>
+    </div>
     <div id="name">
         <div id="name_container">
             <h1>Stephanie Staniswinata</h1>
@@ -23,19 +31,19 @@
         <h1>Past Projects</h1>
         <div id="projects">
             <div class="project">
-                <img class="project_pict" src="images/flashcard.webp" alt="">
+                <a target="_blank" href="https://github.com/steph45607/Steph_Flashcards"> <img class="project_pict" src="images/flashcard.webp" alt=""></a>
                 <h3>FlashCard App</h3>
-                <p>Python project to make it easier to create flashcard and learn.</p>
+                <p class="desc">Python project to make it easier to create flashcard and learn.</p>
             </div>
             <div class="project">
-                <img class="project_pict" src="images/focustime.webp" alt="">
+                <a target="_blank" href="https://github.com/steph45607/Steph_FocusTime"><img class="project_pict" src="images/focustime.webp" alt=""></a>
                 <h3>FocusTime App</h3>
-                <p>Learning app with flashcard, formula calculator, and booklet for elmentary kids.</p>
+                <p class="desc">Learning app with flashcard, formula calculator, and booklet for elmentary kids.</p>
             </div>
             <div class="project">
-                <img class="project_pict" src="images/flashcard.webp" alt="">
+                <a target="_blank" href="https://github.com/steph45607/DB_FinalProject"><img class="project_pict" src="images/database.webp" alt=""></a>
                 <h3>Library Management System</h3>
-                <p>Python app with online database to store books and make transactions for school library.</p>
+                <p class="desc">Python app with online database to store books and make transactions for school library.</p>
             </div>
         </div>
     </div>
@@ -58,7 +66,7 @@
             <h1>Final Project</h1>
             <div>
                 <h3>Library Management System</h3>
-                <p>Fix Binus Library Website</p>
+                <p class="desc">We want to upgrade Binus's <a href="http://library.binus.ac.id/">libary website</a>. So it will be more modern and aesthetically pleasing. And we want to make it faster</p>
             </div>
         </div>
     </div>
@@ -67,15 +75,39 @@
         <h1>Team</h1>
         <div id="people">
             <div class="person">
-                <h3>Edward Alvin</h3>
+                <a target="_blank" href="https://github.com/fl-sll">
+                    <h3>Edward Alvin</h3>
+                </a>
                 <p>2501963141</p>
             </div>
             <div class="person">
-                <h3>Wilbert Wirawan</h3>
+                <a target="_blank" href="https://github.com/rktify">
+                    <h3>Wilbert Wirawan</h3>
+                </a>
                 <p>2501963186</p>
             </div>
         </div>
     </div>
 </body>
+<script>
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    // Get the header
+    var header = document.getElementById("headerJS");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
 
 </html>

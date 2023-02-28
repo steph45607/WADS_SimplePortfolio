@@ -9,6 +9,7 @@ html {
     align-items: center;
     flex-direction: row;
     justify-content: center;
+    height: 300px;
 }
 
 #name_container {
@@ -18,7 +19,7 @@ html {
 
 .center {
     display: block;
-    align-items: cet;
+    align-items: center;
 }
 
 #anya_pic {
@@ -67,4 +68,38 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.desc {
+    width: 50%;
+    display: inline-block;
+}
+
+.person {
+    text-align: center;
+}
+
+#team {
+    text-align: center;
+}
+
+.header {
+    overflow: hidden;
+    z-index: 2;
+    background-color: white;
+}
+
+.header a {
+    float: right;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
